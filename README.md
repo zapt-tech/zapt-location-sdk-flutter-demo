@@ -1,4 +1,4 @@
-# flutter_zapt_sdk_demo
+# zapt-location-sdk-flutter-demo
 
 ## Installation
 
