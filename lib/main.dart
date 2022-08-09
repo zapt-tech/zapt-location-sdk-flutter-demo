@@ -54,7 +54,7 @@ class _ExampleState extends State<Example> {
           webViewController.loadUrl(_mapLink);
         }
       },
-      onPageFinished: ((String url) => initListemBeacons()),
+      onPageFinished: ((String url) => initListenBeacons()),
       javascriptMode: JavascriptMode.unrestricted,
     ));
   }
@@ -83,17 +83,13 @@ class _ExampleState extends State<Example> {
     });
   }
 
-  Future<void> initListemBeacons() async {
+  Future<void> initListenBeacons() async {
     await _zaptSDKPlugin.addListener("ReactNativeZaptSdkBeaconsFound");
     stream.receiveBroadcastStream().listen(_updateBeacons);
   }
 
   void _updateBeacons(beacons) {
     debugPrint(beacons.toString());
-    if (beacons.isNotEmpty) {
-      String beaconsJSON = jsonEncode(beacons);
-      controller?.runJavascript('window.onBeaconsFound($beaconsJSON);');
-    }
   }
 
   @override
