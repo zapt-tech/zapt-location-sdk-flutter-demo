@@ -22,8 +22,7 @@ class _ExampleState extends State<Example> {
   final _zaptSDKPlugin = ZaptSdkFlutter();
   Map<String, String> options = {
     'floorId': '1',
-    'zoom': '-3',
-    'embed': 'true',
+    'zoom': '0',
     'markerX': '1710',
     'markerY': '810',
     'markerZ': '1'
