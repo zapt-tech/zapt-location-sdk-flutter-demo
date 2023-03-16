@@ -9,7 +9,7 @@ In the root folder of your project run:
 ## Getting started example
 [Install](https://docs.flutter.dev/get-started/install) Flutter SDK in your machine.
 
-To run the example just run `$ flutter pub get` and `$ flutter run`.
+To run the example just run  `$ flutter run`.
 
 ## Usage
 
@@ -61,6 +61,16 @@ class _ExampleState extends State<Example> {
 
 Note: Both in the `getMapLink` function and in the `ZaptMap` Widget, the `placeID` parameter is required for the Widget to work. If you have not yet received your location's unique identifier (PLACE_ID), please contact us at contato@zapt.tech.
 
+##### Troubleshooting
+
+If you are experiencing the following error when deploying to iOS:
+
+```
+error: include of non-modular header inside framework module 'zapt_sdk_flutter.ZaptSdkFlutterPlugin'
+```
+
+Check the solution [at this link](https://stackoverflow.com/a/30697222)
+
 ### Permissions Request
 As soon as the Map is initialized in the APP for the first time, permission will be requested to access the device's location, but if necessary, this permission can be requested at an earlier time through the `requestPermissions()` function.
 
@@ -68,14 +78,16 @@ As soon as the Map is initialized in the APP for the first time, permission will
 
 The `getMapLink` function (second parameter) and the `ZaptMap` Widget (`options` parameter) accept options to customize the map view.
 
-| Name             | Type | Default | Description                                                  |
-| :--------------- | ---- | ------- | ------------------------------------------------------------ |
-| bottomNavigation | bool | true    | If true shows the bottom bar                                 |
-| appBar           | bool | true    | If true shows the top bar                                    |
-| search           | bool | true    | If true shows search field (on large screens)                |
-| splash           | bool | true    | If true shows Zapt Tech splash, if false shows generic splash |
-| navBar           | bool | true    | If true shows the nav bar                                    |
-| embed            | bool | false   | If true removes all options                                  |
+| Name                | Type | Default | Description                                                  |
+| :------------------ | ---- | ------- | ------------------------------------------------------------ |
+| bottomNavigation    | bool | true    | If true shows the bottom bar                                 |
+| appBar              | bool | true    | If true shows the top bar                                    |
+| displayZoomButton   | bool | true    | If true shows the zoom buttons                               |
+| displayFloorsButton | bool | true    | If true, it shows the button to change floors                |
+| search              | bool | true    | If true shows search field (on large screens)                |
+| splash              | bool | true    | If true shows Zapt Tech splash, if false shows generic splash |
+| navBar              | bool | true    | If true shows the nav bar                                    |
+| embed               | bool | false   | If true removes all options                                  |
 
 ### Functional Options
 
