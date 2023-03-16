@@ -33,7 +33,7 @@ class _ExampleState extends State<Example> {
   @override
   void initState() {
     super.initState();
-    _zaptSDKPlugin.requestPermissionsBackground({});
+    _zaptSDKPlugin.requestPermissions();
     getMapLink(placeId, options);
   }
 
