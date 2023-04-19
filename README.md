@@ -1,15 +1,15 @@
 # zapt-location-sdk-flutter-demo
 
-## Installation
-
-In the root folder of your project run: 
-
-`$ flutter pub add zapt_sdk_flutter`
-
 ## Getting started example
 [Install](https://docs.flutter.dev/get-started/install) Flutter SDK in your machine.
 
 To run the example just run  `$ flutter run`.
+
+## Installation SDK in your App
+
+In the root folder of your project run: 
+
+`$ flutter pub add zapt_sdk_flutter`
 
 ## Usage
 
