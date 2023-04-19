@@ -2,10 +2,10 @@ PODS:
   - Flutter (1.0.0)
   - webview_flutter_wkwebview (0.0.1):
     - Flutter
-  - zapt_sdk_flutter (0.0.1):
+  - zapt_sdk_flutter (1.0.2):
     - Flutter
-    - ZaptLocation-iOS-SDK (~> 0.0.11-rc4)
-  - ZaptLocation-iOS-SDK (0.0.11-rc4)
+    - ZaptLocation-iOS-SDK (~> 0.0.11)
+  - ZaptLocation-iOS-SDK (0.0.11)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
@@ -27,8 +27,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
   webview_flutter_wkwebview: b7e70ef1ddded7e69c796c7390ee74180182971f
-  zapt_sdk_flutter: 4f876d9f365c8c133ea8758f3530ee0150b731a4
-  ZaptLocation-iOS-SDK: 4b4b1425fc47fa99cd70fce27f82d3a5b2be944b
+  zapt_sdk_flutter: 5c5d6b2cf41e57728dce3204809431d5453c3fc9
+  ZaptLocation-iOS-SDK: 8852479146cfcc24eeb5ef309eef6d56c7640925
 
 PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
 
