@@ -3,7 +3,7 @@
 ## Getting started example
 [Install](https://docs.flutter.dev/get-started/install) Flutter SDK in your machine.
 
-To run the example just run  `$ flutter run`.
+To run the example run `$ flutter pub get` and `$ flutter run`.
 
 ## Installation SDK in your App
 
