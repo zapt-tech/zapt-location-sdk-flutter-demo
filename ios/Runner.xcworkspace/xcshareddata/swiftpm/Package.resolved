@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "zapt-location-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/zapt-tech/zapt-location-ios-sdk.git",
+      "state" : {
+        "revision" : "de6c08f6541ea2a985379be947ee9ac2ef351193",
+        "version" : "0.0.14"
+      }
+    }
+  ],
+  "version" : 2
+}
