@@ -1,5 +1,3 @@
-import 'dart:io';
-import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:zapt_sdk_flutter/zapt_sdk_flutter.dart';
@@ -17,8 +15,6 @@ class Example extends StatefulWidget {
 
 class _ExampleState extends State<Example> {
   static const stream = EventChannel("ReactNativeZaptSdkBeaconsFound");
-  String _mapLink = "";
-  int _selectedIndex = 0;
   final _zaptSDKPlugin = ZaptSdkFlutter();
   Map<String, String> options = {
     'floorId': '1',
@@ -47,9 +43,6 @@ class _ExampleState extends State<Example> {
     } on PlatformException {
       mapLink = 'Error';
     }
-    setState(() {
-      _mapLink = mapLink;
-    });
   }
 
   Future<void> initListenBeacons() async {
